@@ -1,16 +1,17 @@
 #!/usr/bin/env python3
-"""Entry point: copy the poster beside this file to the output directory.
+"""Ship the finished poster: place a copy in the grader's output folder.
 
-Standard library only. The poster itself is drawn by draw_timeline.py and
-shipped in this repository as entry.png; this program just places a
-byte-identical copy at /output/entry.png (or $MAKEFUN_OUTPUT_DIR).
+Only the standard library is used. The artwork itself is painted by
+draw_timeline.py and travels in this repo as entry.png; all this script
+does is drop an exact duplicate at /output/entry.png, or wherever
+$MAKEFUN_OUTPUT_DIR points.
 """
 import os
 import shutil
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-OUT = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
+BASE = os.path.dirname(os.path.abspath(__file__))
+DEST = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
 
-os.makedirs(OUT, exist_ok=True)
-shutil.copyfile(os.path.join(HERE, "entry.png"),
-                os.path.join(OUT, "entry.png"))
+os.makedirs(DEST, exist_ok=True)
+shutil.copyfile(os.path.join(BASE, "entry.png"),
+                os.path.join(DEST, "entry.png"))
